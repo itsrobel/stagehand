@@ -12,7 +12,7 @@ export type AvailableModel =
   | "claude-3-5-sonnet-20240620";
 
 export class LLMProvider {
-  private modelToProviderMap: { [key in AvailableModel]: string } = {
+  modelToProviderMap: { [key in AvailableModel]: string } = {
     "gpt-4o": "openai",
     "gpt-4o-mini": "openai",
     "gpt-4o-2024-08-06": "openai",
