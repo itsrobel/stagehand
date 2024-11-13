@@ -14,10 +14,13 @@ export interface ChatMessage {
 export const modelsWithVision: AvailableModel[] = [
   "gpt-4o",
   "gpt-4o-mini",
+  "gpt-4o-2024-08-06",
   "claude-3-5-sonnet-latest",
   "claude-3-5-sonnet-20240620",
   "claude-3-5-sonnet-20241022",
-  "gpt-4o-2024-08-06",
+  "anthropic.claude-3-sonnet-20240229-v1:0",
+  "anthropic.claude-3-haiku-20240307-v1:0",
+  "anthropic.claude-3-opus-20240229-v1:0",
 ];
 
 export const AnnotatedScreenshotText =

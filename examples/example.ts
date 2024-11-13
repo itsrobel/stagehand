@@ -8,10 +8,17 @@ async function example() {
     debugDom: true,
     enableCaching: true,
   });
+  const modelName = "anthropic.claude-3-sonnet-20240229-v1:0";
 
-  await stagehand.init({ modelName: "claude-3-5-sonnet-20241022" });
+  await stagehand.init({
+    modelName,
+  });
+
   await stagehand.page.goto("https://github.com/browserbase/stagehand");
-  await stagehand.act({ action: "click on the contributors" });
+  await stagehand.act({
+    action: "click on the contributors",
+    modelName,
+  });
   const contributor = await stagehand.extract({
     instruction: "extract the top contributor",
     schema: z.object({
