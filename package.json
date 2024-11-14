@@ -54,6 +54,7 @@
     "@browserbasehq/sdk": "^2.0.0",
     "anthropic": "^0.0.0",
     "anthropic-ai": "^0.0.10",
+    "http-proxy": "^1.18.1",
     "sharp": "^0.33.5",
     "zod-to-json-schema": "^3.23.3"
   },
