@@ -41,8 +41,8 @@ import * as fs from "fs";
 // import * as path from "path";
 // import cookies from "../test-auth.json";
 
-// import cookies from "./firefox-full.json";
-
+// import cookies from "../test_cookies.json";
+let cookies = "";
 console.log(cookies);
 
 async function runWithCookies(data: any) {
@@ -57,6 +57,7 @@ async function runWithCookies(data: any) {
 
   // Set the cookies in the context
   await context.addCookies(data);
+
   // await context.addCookies(sub_domain);
 
   // Now you can use this context to create pages
